@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
 </head>
 <body>
 
@@ -48,7 +49,7 @@
     <div tabindex="0" data-detail="Intel began with a focus on memory products and innovation.">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <!-- Add image -->
+      <img class="timeline-image" src="img/1.jpg" alt="Early Intel technology" />
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -60,7 +61,7 @@
     <div tabindex="0" data-detail="The 4004 helped make programmable computing available for commercial products.">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <!-- Add image -->
+      <img class="timeline-image" src="img/2.jpg" alt="Intel microprocessor" />
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -72,7 +73,7 @@
     <div tabindex="0" data-detail="The 8086 became the foundation for Intel's long-running x86 processor family.">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <!-- Add image -->
+      <img class="timeline-image" src="img/3.jpg" alt="Intel 8086 processor" />
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -83,7 +84,7 @@
     <div tabindex="0" data-detail="The 386 brought powerful 32-bit computing and virtual memory to personal computers.">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <!-- Add image -->
+      <img class="timeline-image" src="img/4.jpg" alt="Intel 386 processor" />
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -151,6 +152,8 @@
         next-generation sustainable semiconductor manufacturing.
       </p>
     </div>
+    </div>
+  </section>
   </section>
   <section class="topic-section" aria-labelledby="topics-heading">
     <div class="topic-heading">
@@ -158,31 +161,99 @@
       <h2 id="topics-heading">Sustainability in focus</h2>
     </div>
 
-    <div class="topic-grid">
-      <article class="topic-card energy-card">
+    <div class="topic-grid row g-4 flex-nowrap">
+      <article class="topic-card energy-card col-3">
         <span class="topic-icon" aria-hidden="true">01</span>
         <h3>Energy</h3>
         <p>Improving efficiency and expanding renewable electricity across operations.</p>
       </article>
 
-      <article class="topic-card water-card">
+      <article class="topic-card water-card col-3">
         <span class="topic-icon" aria-hidden="true">02</span>
         <h3>Water</h3>
         <p>Conserving water through reuse, restoration, and smarter manufacturing.</p>
       </article>
 
-      <article class="topic-card recycling-card">
+      <article class="topic-card recycling-card col-3">
         <span class="topic-icon" aria-hidden="true">03</span>
         <h3>Recycling</h3>
         <p>Reducing waste and finding new uses for materials throughout the process.</p>
       </article>
 
-      <article class="topic-card emissions-card">
+      <article class="topic-card emissions-card col-3">
         <span class="topic-icon" aria-hidden="true">04</span>
         <h3>Emissions</h3>
         <p>Taking action to lower greenhouse gas emissions on the path to net zero.</p>
       </article>
     </div>
   </section>
+
+   <!-- 3-Column Content Section -->
+  <section class="content-section" aria-label="Sustainability commitments">
+    <div class="content-columns row g-4 flex-nowrap">
+
+      <!-- Column 1 -->
+      <article class="content-column col-4">
+        <h2>RISE Strategy</h2>
+        <p>
+          Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy,
+          Intel sets ambitious 2030 goals, including driving industry-wide
+          progress on climate action, water stewardship, and waste reduction.
+        </p>
+        <!-- Learn More Button -->
+        <a href="#">Learn More</a>
+      </article>
+
+      <!-- Column 2 -->
+      <article class="content-column col-4">
+        <h2>Commitment</h2>
+        <p>
+          In 2022, Intel pledged to achieve net-zero greenhouse gas emissions
+          (Scope 1 and 2) by 2040. This commitment builds on decades of
+          environmental initiatives and partnerships across the semiconductor
+          industry.
+        </p>
+        <!-- Learn More Button -->
+        <a href="#">Learn More</a>
+      </article>
+
+      <!-- Column 3 -->
+      <article class="content-column col-4">
+        <h2>Water &amp; Waste</h2>
+        <p>
+          Intel conserves billions of gallons of water annually and
+          collaborates with local communities to restore watersheds.
+          Intel also upcycles and recycles materials to reduce waste and
+          advance a circular economy.
+        </p>
+        <!-- Learn More Button -->
+        <a href="#">Learn More</a>
+      </article>
+    </div>
+  </section>
+  <section class="signup-section">
+    <div class="form-placeholder">
+      <form>
+        <div class="mb-3">
+          <label for="signup-name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="signup-name" name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="signup-email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="signup-email" name="email" required>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Sign Up</button>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <p>&copy; 2026 Intel Corporation. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </nav>
+  </footer>
 </body>
-</html>
